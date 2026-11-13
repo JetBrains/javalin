@@ -1,0 +1,11 @@
+# Infrastructure for builds as a Kotlin user project:
+# tests excluded from KUP builds (-Dkotlin_version) because they depend on a browser/network
+# or are flaky in upstream CI regardless of the Kotlin compiler
+**/TestWebBrowser.java
+**/TestJavalinVueBrowser.java
+**/TestWebSocketHttp2.java
+**/TestWebSocket.java
+**/TestWsBeforeAfter.java
+**/TestWsUpgrade.java
+**/TestMockContext.java
+**/TestLogging.java
